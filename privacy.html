@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>content-pusher — privacy policy</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; background:#0b0f18; color:#e7ecf3;
+         font:16px/1.65 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 46rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+  h1 { font-size: 1.6rem; margin: 0 0 .25rem; letter-spacing:-.02em; }
+  .sub { color:#8b98ab; margin:0 0 2.5rem; }
+  h2 { font-size: 1rem; text-transform:uppercase; letter-spacing:.08em;
+       color:#8b98ab; margin:2.5rem 0 .75rem; }
+  p, li { color:#c8d2e0; }
+  a { color:#5fb3ff; }
+  code { background:#161c28; padding:.15em .4em; border-radius:4px; font-size:.9em; }
+  footer { margin-top:4rem; padding-top:1.5rem; border-top:1px solid #1c2331;
+           color:#6f7d92; font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="sub">content-pusher · last updated 12 November 2026</p>
+
+  <h2>1. Who this covers</h2>
+  <p>This policy covers <strong>content-pusher</strong>, a private software tool operated by a
+  single individual ("the developer"). It is not offered as a service to the public and has
+  no users other than its developer.</p>
+
+  <h2>2. What data is accessed</h2>
+  <p>When the developer authorises the application through Google's OAuth consent screen, the
+  application receives an OAuth token granting:</p>
+  <ul>
+    <li><strong>YouTube Data API — upload</strong> (<code>youtube.upload</code>): permission to
+        upload a video to the developer's own channel.</li>
+    <li><strong>YouTube Analytics API — read only</strong>
+        (<code>yt-analytics.readonly</code>): permission to read view counts and watch-time
+        statistics for videos on that same channel.</li>
+  </ul>
+  <p>No other Google account data is requested. The application does not read email, contacts,
+  calendar, files, or any other Google service.</p>
+
+  <h2>3. How data is stored</h2>
+  <p>The OAuth refresh token is stored in a local file on the developer's own computer,
+  protected by the operating system's user account permissions. Video files are stored
+  locally. No database, no cloud storage, and no third-party processor is involved.</p>
+
+  <h2>4. How data is used</h2>
+  <p>Solely to (a) upload videos the developer has produced, and (b) read the performance
+  statistics of those videos in order to improve subsequent videos. Data is never used for
+  advertising, profiling, training machine-learning models, or any purpose unrelated to
+  publishing on the developer's own channel.</p>
+
+  <h2>5. Sharing</h2>
+  <p>No data is sold, rented, transferred, or disclosed to any third party. There are no
+  analytics providers, advertising networks, or sub-processors.</p>
+
+  <h2>6. Google API Services User Data Policy</h2>
+  <p>This application's use and transfer of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API
+  Services User Data Policy</a>, including the Limited Use requirements. Specifically:</p>
+  <ul>
+    <li>Data is used only to provide or improve the user-facing features described above.</li>
+    <li>Data is not transferred to third parties except as necessary to provide those
+        features, as required by law, or as part of a merger or acquisition with prior
+        consent.</li>
+    <li>Data is not used for serving advertising.</li>
+    <li>Data is not used to determine creditworthiness or for lending purposes.</li>
+    <li>No humans read the data, other than the developer reading their own data.</li>
+  </ul>
+
+  <h2>7. Retention and deletion</h2>
+  <p>The OAuth token is retained until revoked. The developer can revoke access at any time at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>,
+  which immediately invalidates the token, and can delete the local token file. Videos are
+  deleted from local storage at the developer's discretion; videos already uploaded to YouTube
+  are managed through YouTube itself.</p>
+
+  <h2>8. Security</h2>
+  <p>Access is protected by the developer's own Google account security, including two-step
+  verification. Tokens are never committed to public source control.</p>
+
+  <h2>9. Children</h2>
+  <p>The application is not directed at children and collects no data from any person other
+  than its developer.</p>
+
+  <h2>10. Changes</h2>
+  <p>Material changes to this policy will be reflected in the "last updated" date above.</p>
+
+  <h2>11. Contact</h2>
+  <p>Questions about this policy: <a href="mailto:driprl100@gmail.com">driprl100@gmail.com</a></p>
+
+  <footer>
+    <a href="index.html">Home</a> · content-pusher
+  </footer>
+</main>
+</body>
+</html>

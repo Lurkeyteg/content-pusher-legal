@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>content-pusher — application home page</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; background:#0b0f18; color:#e7ecf3;
+         font:16px/1.65 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 46rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+  h1 { font-size: 1.6rem; margin: 0 0 .25rem; letter-spacing:-.02em; }
+  .sub { color:#8b98ab; margin:0 0 2.5rem; }
+  h2 { font-size: 1rem; text-transform:uppercase; letter-spacing:.08em;
+       color:#8b98ab; margin:2.5rem 0 .75rem; }
+  p, li { color:#c8d2e0; }
+  a { color:#5fb3ff; }
+  code { background:#161c28; padding:.15em .4em; border-radius:4px; font-size:.9em; }
+  footer { margin-top:4rem; padding-top:1.5rem; border-top:1px solid #1c2331;
+           color:#6f7d92; font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>content-pusher</h1>
+  <p class="sub">A private, single-user automation tool for publishing short-form video.</p>
+
+  <h2>What it is</h2>
+  <p><strong>content-pusher</strong> is personal software, not a public product. It renders
+  vertical short videos on the developer's own computer and uploads them to the developer's
+  own YouTube channel through the official YouTube Data API. There are no other users, no
+  sign-up, and no service offered to third parties.</p>
+
+  <h2>Why it requests Google account access</h2>
+  <ul>
+    <li><code>youtube.upload</code> — to upload a finished video to the channel the
+        developer owns.</li>
+    <li><code>yt-analytics.readonly</code> — to read the view and watch-time statistics of
+        those same uploads, so the format can be improved.</li>
+  </ul>
+  <p>Access is granted by the channel owner through Google's OAuth consent screen and can be
+  revoked at any time at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+  <h2>Where data goes</h2>
+  <p>Nowhere. The OAuth refresh token is stored in a local file on the developer's machine and
+  is never transmitted to any server other than Google's own APIs. No analytics, no trackers,
+  no third-party services, no advertising.</p>
+
+  <h2>Privacy</h2>
+  <p>See the <a href="privacy.html">privacy policy</a> for the full detail, including how this
+  application complies with the Google API Services User Data Policy.</p>
+
+  <footer>
+    Contact: <a href="mailto:driprl100@gmail.com">driprl100@gmail.com</a><br>
+    Last updated: 12 November 2026
+  </footer>
+</main>
+</body>
+</html>
